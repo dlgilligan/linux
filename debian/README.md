@@ -1,0 +1,22 @@
+# Required Packages
+## Installable through repos
+```
+sudo apt install zsh \
+    polybar wmctrl xprop slop x11-utils \
+    rofi \
+    alacritty \
+    tmux
+```
+
+## From source or find a .deb
+xfce4-docklike-plugin  
+zen browser  
+kickstart neovim  
+
+## Generic Themeing
+Font: JetBrainsMono NF  
+GTK-Theme: Orchis-Grey-Dark-Compact  
+Icons: Gnome  
+
+## Misc
+ohmyzsh  

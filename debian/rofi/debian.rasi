@@ -1,0 +1,100 @@
+* {
+    background-color: #2b2b2b;
+    border-color: #555555;
+    text-color: #ffffff;
+    spacing: 2;
+    width: 600;
+}
+
+window {
+    background-color: #2b2b2b;
+    border: 2;
+    border-color: #555555;
+    border-radius: 8;
+}
+
+mainbox {
+    border: 0;
+    padding: 0;
+}
+
+message {
+    border: 0;
+    border-color: #555555;
+    padding: 1;
+}
+
+textbox {
+    text-color: #ffffff;
+}
+
+listview {
+    fixed-height: 0;
+    border: 0;
+    border-color: #555555;
+    spacing: 2;
+    scrollbar: false;
+    padding: 8;
+    lines: 12;
+}
+
+element {
+    border: 0;
+    padding: 8;
+    border-radius: 4;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+element selected.normal {
+    background-color: #3a3a3a;
+    text-color: #ffffff;
+    border-color: #d70a53;
+    border: 0 0 0 3;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 24;
+    padding: 0 8 0 0;
+}
+
+inputbar {
+    spacing: 0;
+    text-color: #ffffff;
+    padding: 12;
+    background-color: #3a3a3a;
+    border: 0 0 1 0;
+    border-color: #555555;
+    children: [ prompt, textbox-prompt-colon, entry ];
+}
+
+prompt {
+    spacing: 0;
+    text-color: #d70a53;
+    padding: 0 4 0 4;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+    margin: 0;
+    width: 1ch;
+    text-color: #ffffff;
+}
+
+entry {
+    spacing: 0;
+    text-color: #ffffff;
+    expand: true;
+    horizontal-align: 0;
+    cursor: none;
+}

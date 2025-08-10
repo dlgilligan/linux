@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Polybar
+Comment=Custom Status Bar
+Exec=/home/daniel/.config/polybar/launch.sh
+Terminal=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true

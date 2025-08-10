@@ -1,0 +1,55 @@
+font:
+  size: 11
+  normal:
+    family: JetBrainsMono Nerd Font Mono
+    style: Regular
+  bold:
+    family: JetBrainsMono Nerd Font Mono
+    style: Bold
+  italic:
+    family: JetBrainsMono Nerd Font Mono
+    style: Italic
+  bold_italic:
+    family: JetBrainsMono Nerd Font Mono
+    style: Bold Italic
+window:
+  startup_mode: Maximized
+  padding:
+    x: 5
+    y: 5
+scrolling:
+  history: 10000
+  multiplier: 10
+cursor:
+  style: Block
+  unfocused_hollow: true
+colors:
+  draw_bold_text_with_bright_colors: true
+  primary:
+    background: "#242424"  # Darker, closer to tmux/polybar but still distinct
+    foreground: "#dfdfdf"  # Match polybar foreground
+  cursor:
+    text: "#242424"
+    background: "#dfdfdf"
+  normal:
+    black: "#1e1e1e"       # Match polybar background
+    red: "#d70a53"         # Match polybar debian-red
+    green: "#689d6a"       # Muted green that fits the grey theme
+    yellow: "#ffb52a"      # Match polybar primary
+    blue: "#5a9fd4"        # Softer blue that harmonizes with greys
+    magenta: "#d70a53"     # Use debian-red for consistency
+    cyan: "#5fb3b3"        # Softer cyan that complements the theme
+    white: "#dfdfdf"       # Match polybar foreground
+  bright:
+    black: "#707880"       # Match polybar disabled
+    red: "#e60053"         # Match polybar secondary (brighter red)
+    green: "#7cc87c"       # Brighter but still muted green
+    yellow: "#ffb52a"      # Match polybar primary
+    blue: "#74b9f0"        # Brighter harmonious blue
+    magenta: "#e60053"     # Use polybar secondary for consistency
+    cyan: "#85d3d3"        # Brighter harmonious cyan
+    white: "#ffffff"       # Pure white for maximum contrast
+mouse:
+  hide_when_typing: true
+general:
+  live_config_reload: true

@@ -1,0 +1,26 @@
+configuration {
+    modi: "drun,ssh,run,window";
+    show-icons: true;
+    drun-display-format: "{name}";
+    hide-scrollbar: true;
+    matching: "fuzzy";
+    sort: true;
+    terminal: "alacritty";
+    window-format: "{w}   {c}   {t}";
+    click-to-exit: true;
+    fixed-num-lines: true;
+    show-match: true;
+
+    kb-row-tab: "";
+    kb-row-down: "Down";
+    kb-row-up: "Up"; 
+    kb-mode-next: "Tab";
+    kb-mode-previous: "shift+Tab";
+
+    ssh-client: "ssh";
+    ssh-command: "{terminal} -e {ssh-client} {host}";
+    parse-hosts: true;
+    parse-known-hosts: true;
+}
+
+@theme "debian"
