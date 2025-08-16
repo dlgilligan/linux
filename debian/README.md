@@ -2,7 +2,7 @@
 ## Installable through repos
 ```
 sudo apt install zsh \
-    polybar wmctrl xprop slop x11-utils \
+    polybar wmctrl slop x11-utils \
     rofi \
     alacritty \
     tmux
