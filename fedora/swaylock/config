@@ -1,0 +1,37 @@
+# General settings
+color=#1d2021
+scaling=fill
+
+# Colors
+key-hl-color=#ebdbb2
+bs-hl-color=#ebdbb2
+indicator-radius=100
+indicator-thickness=7
+
+# Text colors - matching Equilux dark theme
+text-color=#ebdbb2
+text-clear-color=#ebdbb2
+text-ver-color=#ebdbb2
+text-wrong-color=#ebdbb2
+
+# Ring colors
+ring-color=#1B1B1B
+ring-ver-color=#1B1B1B
+ring-clear-color=#1B1B1B
+ring-wrong-color=#CC241D
+
+# Background colors for each state
+inside-color=#00000000
+inside-ver-color=#00000000
+inside-clear-color=#00000000
+inside-wrong-color=#00000000
+
+# Line settings
+line-color=#00000000
+line-ver-color=#00000000
+line-clear-color=#00000000
+line-wrong-color=#00000000
+
+# Font
+font=JetBrains Mono Nerd Font Mono
+font-size=20

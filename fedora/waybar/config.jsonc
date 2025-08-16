@@ -1,0 +1,136 @@
+// -*- mode: jsonc -*-
+{
+  "layer": "top",
+  "position": "top",
+  "height": 16,
+  "spacing": 0,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": true,
+  "modules-left": ["custom/logo", "sway/workspaces"],
+  "modules-center": ["sway/window"],
+  "modules-right": ["pulseaudio", "bluetooth", "network", "cpu", "temperature", "memory", "battery", "clock"],
+
+  "sway/workspaces": {
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": []
+    },
+    "all-outputs": true,
+    "format": "{name}"
+  },
+
+  "tray": {
+    "show-passive-items": true,
+    "spacing": 10
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "adapter": "ADP0",
+    "interval": 1,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "max-length": 20,
+    "format": "{icon}{capacity}%",
+    "format-warning": "{icon}{capacity}%",
+    "format-critical": "{icon}{capacity}%",
+    "format-charging": "<span foreground='#26ff55'>\uf1e6 {capacity}%</span>",
+    "format-plugged": "<span foreground='#26ff55'>\uf1e6 {capacity}%</span>",
+    "format-alt": "{icon} {time}",
+    "format-full": "<span foreground='#26ff55'>\uf240 {capacity}%</span>",
+    "format-icons": ["\uf244 ", "\uf243 ", "\uf242 ", "\uf241 ", "\uf240 "]
+  },
+
+  "sway/window": {
+    "format": "{}",
+    "rewrite": {
+        "(.*) — Firefox": "🌎 $1",
+        "vi (.*)": "\uf036 $1",
+        "vim (.*)": "\uf036 $1",
+        "nvim (.*)": "\uf036 $1",
+        "(.*) - zsh": "\uf120 $1",
+        "(.*) - Discord": "\uf392 $1"
+    },
+    "separate-outputs": true,
+    "max-length": 50
+  },
+
+  "bluetooth": {
+    "format": "\uf294 {status}",
+    "format-disabled": "\uf294",
+    "format-connected": "\uf293 {num_connections}",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+  },
+  
+  "network": {
+    "interface": "wlp0s20f3",
+    "format": "{ifname}",
+    "format-wifi": "\uf1eb {essid} ({signalStrength}%)",
+    "format-ethernet": "\uf6ff {ipaddr}/{cidr}",
+    "format-disconnected": "\uf1eb",
+    "tooltip-format": "\uf6ff {ifname} via {gwaddr}",
+    "tooltip-format-wifi": "\uf1eb {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "\uf6ff {ifname}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+
+  "clock": {
+    "format": "<span color='#6bfffd'>\uf017 </span>{:%I:%M %p}",
+    "format-alt": "<span color='#ff9854'>\uf133 </span>{:%a %b %d}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "cpu": {
+    "format": "\uf2db {usage}%",
+    "tooltip": true,
+    "interval": 1
+  },
+
+  "temperature": {
+    "format": "\uf769 {temperatureC}°C"
+  },
+
+  "memory": {
+    "format": "\uf538 {used:0.2f}G"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "\uf6a9 muted",
+    "format-icons": {
+      "headphone": "\uf025",
+      "hands-free": "\uf590",
+      "headset": "\uf590",
+      "phone": "\uf095",
+      "portable": "\uf3cd",
+      "car": "\uf1b9",
+      "default": ["\uf026", "\uf027", "\uf028"]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "custom/logo": {
+    "format": "\uf30a",
+    "tooltip": "Fedora Linux",
+    "tooltip-style": "bold"
+  },
+
+  "custom/sep": {
+    "format": "|",
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "tooltip": false,
+    "on-click": "wlogout -p layer-shell &",
+    "format": "\uf011"
+  }
+}

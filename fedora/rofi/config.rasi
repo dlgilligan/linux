@@ -1,0 +1,16 @@
+
+//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+
+//@theme "/usr/share/rofi/themes/sidebar.rasi"
+
+//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+
+//@theme "/usr/share/rofi/themes/materia.rasi"
+
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+
+//@theme "/usr/share/rofi/themes/minimal.rasi"
+
+//@theme "/usr/share/rofi/themes/dmenu.rasi"
+
+@theme "/usr/share/rofi/themes/minimal.rasi"
