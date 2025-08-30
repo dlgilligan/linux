@@ -15,4 +15,3 @@ ohmyzsh - and associated plugins
 rofi-network-manager  
 
 # To-Do
-Create ohmyzsh theme with what I like  
