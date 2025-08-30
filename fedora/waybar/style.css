@@ -24,7 +24,7 @@ window#waybar.hidden {
   font-style: normal;
   opacity: 0.8;
   font-size: 16px;
-  color: #ebdbb2;
+  color: #ffffff;
 }
 
 #workspaces button {
@@ -32,7 +32,7 @@ window#waybar.hidden {
   margin: 3px 3px;
   border-radius: 15px;
   border: 0px;
-  color: #ebdbb2;
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
   opacity: 1;
@@ -44,7 +44,7 @@ window#waybar.hidden {
 
 #workspaces button.focused {
   color: #000;
-  background: #ebdbb2;
+  background: #ffffff;
   border-radius: 15px;
   min-width: 40px;
   transition: all 0.2s ease-in-out;
@@ -66,13 +66,13 @@ window#waybar.hidden {
 #bluetooth {
   padding: 0px 8px;
   margin: 6px 3px;
-  color: #ebdbb2;
+  color: #ffffff;
   border-radius: 20px;
   background-color: #1e1e1e;
 }
 
 #custom-logo {
-  color: #ebdbb2;
+  color: #ffffff;
   padding: 0px 10px;
   font-size: 25px;
 }
@@ -99,19 +99,19 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: #ebdbb2;
+  color: #ffffff;
 }
 
 #clock.date {
-  color: #ebdbb2;
+  color: #ffffff;
 }
 
 #window {
-  color: #ebdbb2;
+  color: #ffffff;
 }
 
 #pulseaudio {
-  color: #ebdbb2;
+  color: #ffffff;
 }
 
 #pulseaudio.muted {
@@ -125,7 +125,7 @@ window#waybar.empty #window {
 tooltip {
   border-radius: 8px;
   background-color: #1e1e1e;
-  color: #ebdbb2;
+  color: #ffffff;
   padding: 10px;
   border: 1px solid #333333;
 }

@@ -1,0 +1,114 @@
+* {
+    background-color: #181818;
+    border-color: #ffffff;
+    text-color: #ffffff;
+    spacing: 2;
+    width: 600;
+    font: "JetBrainsMono Nerd Font Mono 11";
+}
+
+window {
+    background-color: #181818;
+    border: 2;
+    border-color: #ffffff;
+    border-radius: 15;
+    padding: 8;
+}
+
+mainbox {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+message {
+    border: 0;
+    border-color: #ffffff;
+    padding: 8;
+    background-color: transparent;
+}
+
+textbox {
+    text-color: #ffffff;
+    background-color: transparent;
+}
+
+listview {
+    fixed-height: 0;
+    border: 0;
+    border-color: #ffffff;
+    spacing: 4;
+    scrollbar: false;
+    padding: 8;
+    lines: 12;
+    background-color: transparent;
+}
+
+element {
+    border: 0;
+    padding: 8;
+    border-radius: 15;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 2;
+}
+
+element normal.normal {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-color: #ffffff;
+}
+
+element selected.normal {
+    background-color: #ffffff;
+    text-color: #000000;
+    border-color: #ffffff;
+    border: 0;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    padding: 0;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 20;
+    padding: 0 8 0 0;
+}
+
+inputbar {
+    spacing: 0;
+    text-color: #ffffff;
+    padding: 12;
+    background-color: #1e1e1e;
+    border: 0 0 0 0;
+    border-color: #ffffff;
+    border-radius: 15;
+    margin: 0 0 8 0;
+    children: [ prompt, textbox-prompt-colon, entry ];
+}
+
+prompt {
+    spacing: 0;
+    text-color: #ffffff;
+    padding: 0 8 0 8;
+    background-color: transparent;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+    margin: 0;
+    width: 1ch;
+    text-color: #ffffff;
+    background-color: transparent;
+}
+
+entry {
+    spacing: 0;
+    text-color: #ffffff;
+    expand: true;
+    horizontal-align: 0;
+    cursor: text;
+    background-color: transparent;
+}

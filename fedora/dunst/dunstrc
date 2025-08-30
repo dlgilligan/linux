@@ -5,19 +5,19 @@
     geometry = "300x5-30+20"
     indicate_hidden = yes
     shrink = no
-    transparency = 0
+    transparency = 20
     notification_height = 0
     separator_height = 2
-    padding = 8
-    horizontal_padding = 8
+    padding = 12
+    horizontal_padding = 12
     frame_width = 2
-    frame_color = "#ebdbb2"
+    frame_color = "#ffffff"
     separator_color = frame
     sort = yes
     idle_threshold = 120
 
     # Text
-    font = Cantarell 10
+    font = JetBrainsMono Nerd Font Mono 11
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
@@ -48,35 +48,35 @@
     class = Dunst
     startup_notification = false
     verbosity = mesg
-    corner_radius = 0
+    corner_radius = 15
 
     # Mouse
     mouse_left_click = close_current
     mouse_middle_click = do_action, close_current
     mouse_right_click = close_all
 
-    progress_bar=true
+    progress_bar = true
     progress_bar_height = 10
-    progress_bar_frame_width=1
-    progress_bar_min_width=150
-    progress_bar_max_width=300
-    highlight= "#ebdbb2"
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    highlight = "#ffffff"
 
 [experimental]
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#1B1B1B"
-    foreground = "#ebdbb2"
+    background = "#1e1e1e"
+    foreground = "#ffffff"
     timeout = 10
 
 [urgency_normal]
-    background = "#1B1B1B"
-    foreground = "#ebdbb2"
+    background = "#1e1e1e"
+    foreground = "#ffffff"
     timeout = 10
 
 [urgency_critical]
-    background = "#CC241D"
-    foreground = "#ebdbb2"
-    frame_color = "#FF0000"
+    background = "#ff5b45"
+    foreground = "#ffffff"
+    frame_color = "#ffffff"
     timeout = 0

@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="dst"
+ZSH_THEME="alanpeabody"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -70,9 +70,18 @@ ZSH_THEME="dst"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(tmux zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat)
+plugins=(git tmux zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat)
+
+ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
+
+# Override zsh-syntax-highlighting colors to use waybar cyan
+ZSH_HIGHLIGHT_STYLES[command]='fg=#94e2d5'           # Use waybar cyan for commands
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#94e2d5'           # Built-in commands
+ZSH_HIGHLIGHT_STYLES[function]='fg=#94e2d5'          # Functions
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#94e2d5'             # Aliases
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#94e2d5'        # Precommands (sudo, etc.)
 
 # User configuration
 
@@ -102,27 +111,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vi="nvim"
-alias vim="nvim"
-alias dnf="sudo dnf"
-
-alias wifi='f() { nmcli device wifi connect $1 --ask };f'
-
-alias ports='netstat -tulanp'
-alias meminfo='free -m -l -t'
-alias psmem='ps auxf | sort -nr -k 4'
-alias psmem10='ps auxf | sort -nr -k 4 | head -10'
-alias pscpu='ps auxf | sort -nr -k 3'
-alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
-
-alias wget='wget -c'
-alias df='df -H'
-alias du='du -ch'
-alias fast='fastfetch'
-
-alias vpn='tailscale status'
-
-alias zshrc='vim ~/.zshrc'
-alias clip='clipcopy'
-
-alias ssh='TERM=xterm ssh'
+alias vi='nvim'
+alias vim='nvim'
+alias cat='bat'

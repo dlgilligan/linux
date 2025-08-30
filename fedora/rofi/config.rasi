@@ -1,16 +1,26 @@
+configuration {
+    modi: "drun,ssh,run,window";
+    show-icons: true;
+    drun-display-format: "{name}";
+    hide-scrollbar: true;
+    matching: "fuzzy";
+    sort: true;
+    terminal: "alacritty";
+    window-format: "{w}   {c}   {t}";
+    click-to-exit: true;
+    fixed-num-lines: true;
+    show-match: true;
 
-//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+    kb-element-next: "";
+    kb-row-down: "Down";
+    kb-row-up: "Up"; 
+    kb-mode-next: "Tab";
+    kb-mode-previous: "shift+Tab";
 
-//@theme "/usr/share/rofi/themes/sidebar.rasi"
+    ssh-client: "ssh";
+    ssh-command: "{terminal} -e {ssh-client} {host}";
+    parse-hosts: true;
+    parse-known-hosts: true;
+}
 
-//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
-
-//@theme "/usr/share/rofi/themes/materia.rasi"
-
-//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
-
-//@theme "/usr/share/rofi/themes/minimal.rasi"
-
-//@theme "/usr/share/rofi/themes/dmenu.rasi"
-
-@theme "/usr/share/rofi/themes/minimal.rasi"
+@theme "custom"

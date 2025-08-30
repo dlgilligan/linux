@@ -1,0 +1,69 @@
+[font]
+size = 11
+
+  [font.normal]
+  family = "JetBrainsMono Nerd Font Mono"
+  style = "Regular"
+
+  [font.bold]
+  family = "JetBrainsMono Nerd Font Mono"
+  style = "Bold"
+
+  [font.italic]
+  family = "JetBrainsMono Nerd Font Mono"
+  style = "Italic"
+
+  [font.bold_italic]
+  family = "JetBrainsMono Nerd Font Mono"
+  style = "Bold Italic"
+
+[window]
+startup_mode = "Maximized"
+
+  [window.padding]
+  x = 5
+  y = 5
+
+[scrolling]
+history = 10_000
+multiplier = 10
+
+[cursor]
+style = "Block"
+unfocused_hollow = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+  [colors.primary]
+  foreground = "#ffffff"
+
+  [colors.cursor]
+  text = "#242424"
+  background = "#dfdfdf"
+
+  [colors.normal]
+  black = "#1e1e1e"        # Match waybar background
+  red = "#cc241d"          # Keep functional red
+  green = "#b8bb26"        # Keep functional green
+  yellow = "#ffb52a"       # Match waybar yellow accent
+  blue = "#94e2d5"         # Match waybar cyan
+  magenta = "#cba6f7"      # Match waybar memory purple
+  cyan = "#5fb3b3"         # Keep but avoid using (special color)
+  white = "#ffffff"        # Match waybar white
+
+  [colors.bright]
+  black = "#707880"        # Muted grey
+  red = "#fb4934"          # Brighter functional red
+  green = "#b8bb26"        # Keep functional green
+  yellow = "#ffb52a"       # Match waybar yellow accent
+  blue = "#94e2d5"         # Match waybar cyan
+  magenta = "#cba6f7"      # Match waybar memory purple
+  cyan = "#85f3f3"         # Keep but avoid using (special color)
+  white = "#ffffff"        # Pure white
+
+[mouse]
+hide_when_typing = true
+
+[general]
+live_config_reload = true

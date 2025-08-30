@@ -1,18 +1,18 @@
 # General settings
-color=#1d2021
+color=#181818
 scaling=fill
 
 # Colors
-key-hl-color=#ebdbb2
-bs-hl-color=#ebdbb2
+key-hl-color=#ffffff
+bs-hl-color=#ffffff
 indicator-radius=100
 indicator-thickness=7
 
 # Text colors - matching Equilux dark theme
-text-color=#ebdbb2
-text-clear-color=#ebdbb2
-text-ver-color=#ebdbb2
-text-wrong-color=#ebdbb2
+text-color=#ffffff
+text-clear-color=#ffffff
+text-ver-color=#ffffff
+text-wrong-color=#ffffff
 
 # Ring colors
 ring-color=#1B1B1B

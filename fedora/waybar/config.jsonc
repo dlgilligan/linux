@@ -10,7 +10,7 @@
   "fixed-center": true,
   "modules-left": ["custom/logo", "sway/workspaces"],
   "modules-center": ["sway/window"],
-  "modules-right": ["pulseaudio", "bluetooth", "network", "cpu", "temperature", "memory", "battery", "clock"],
+  "modules-right": ["pulseaudio", "bluetooth", "network", "temperature", "cpu", "memory", "battery", "clock"],
 
   "sway/workspaces": {
     "persistent-workspaces": {
@@ -79,7 +79,8 @@
     "tooltip-format-wifi": "\uf1eb {essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "\uf6ff {ifname}",
     "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50
+    "max-length": 50,
+    "on-click": "/usr/local/bin/ronema"
   },
 
   "clock": {

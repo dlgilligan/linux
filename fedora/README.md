@@ -1,19 +1,18 @@
 # Required Packages
 ```
-sudo dnf install zsh kitty rofi waybar
+sudo dnf install zsh alacritty rofi waybar tmux
 ```
 
 ## From source
-kickstart neovim
+kickstart neovim  
+zen browser  
 
 ## Generic Stuff
-Font: JetBrainsMono NF
-GTK-Theme: Equilux-compact
-Icons: Gruvbox-plus-dark
+Font: JetBrainsMono NF  
 
 ## Misc
-ohmyzsh
+ohmyzsh - and associated plugins  
+rofi-network-manager  
 
 # To-Do
-Replace kitty with alacritty (From Zebra laptop)
-Tmux config (Zebra laptop)
+Create ohmyzsh theme with what I like  
