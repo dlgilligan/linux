@@ -20,3 +20,6 @@ Icons: Gnome
 
 ## Misc
 ohmyzsh  
+
+# Images
+![Alt text](/images/Screenshot_2025-09-06_19-09-40.png?raw=true)
