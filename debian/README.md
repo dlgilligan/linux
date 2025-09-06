@@ -22,4 +22,6 @@ Icons: Gnome
 ohmyzsh  
 
 # Images
-![Alt text](images/Screenshot_2025-09-06_19-09-40.png?raw=true)
+![Alt text](images/Screenshot_2025-09-06_19-18-02.jpeg?raw=true)
+![Alt text](images/Screenshot_2025-09-06_19-18-14.jpeg?raw=true)
+![Alt text](images/Screenshot_2025-09-06_19-18-41.jpeg?raw=true)
