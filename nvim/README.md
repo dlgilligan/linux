@@ -17,6 +17,9 @@ sudo apt update
 sudo apt install make gcc tree-sitter-cli unzip git xclip neovim
 ```
 
+## Fedora
+`sudo dnf install -y gcc make git tree-sitter-cli unzip neovim`
+
 # Files
 init.lua - Plugin install and configuration
 lua/
