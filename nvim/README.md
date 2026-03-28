@@ -4,8 +4,10 @@
 # Notes
 I set an alias such that vi and vim open neovim. That way im not accidentally typing nvim when SSHd into servers.
 
-# Requirements
+# Installation
 Install a nerd-font, I use JetBrainsMono
+For the most part, the kickstart neovim install instructions can be followed. But ripgrep and fd-find are not needed,
+as I have removed the telescope plugin.
 
 ## Ubuntu
 Need unstable or some of the autocmds wont work (needed for yank highlighting and LSP attach)
