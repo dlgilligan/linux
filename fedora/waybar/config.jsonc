@@ -8,7 +8,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["custom/logo", "sway/workspaces"],
+  "modules-left": ["sway/workspaces"],
   "modules-center": ["sway/window"],
   "modules-right": ["pulseaudio", "bluetooth", "network", "temperature", "cpu", "memory", "battery", "clock"],
 

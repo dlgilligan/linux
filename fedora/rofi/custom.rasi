@@ -4,7 +4,7 @@
     text-color: #ffffff;
     spacing: 2;
     width: 600;
-    font: "JetBrainsMono Nerd Font Mono 11";
+    font: "Unifont 11";
 }
 
 window {
