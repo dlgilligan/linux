@@ -17,7 +17,7 @@
     idle_threshold = 120
 
     # Text
-    font = JetBrainsMono Nerd Font Mono 11
+    font = Unifont 11
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
