@@ -43,6 +43,23 @@ require("lazy").setup({
 		end,
 	},
 
+	-- Dashboard
+	{
+		"nvimdev/dashboard-nvim",
+		event = "VimEnter",
+		config = function()
+			require("dashboard").setup({
+				-- config
+				config = {
+					header = {
+						"",
+					},
+				},
+			})
+		end,
+		dependencies = { { "nvim-tree/nvim-web-devicons" } },
+	},
+
 	-- VSCode-like tabs and fs tree
 	{ -- FS Tree
 		"nvim-neo-tree/neo-tree.nvim",
