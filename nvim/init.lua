@@ -50,9 +50,21 @@ require("lazy").setup({
 		config = function()
 			require("dashboard").setup({
 				-- config
+				theme = "hyper",
 				config = {
 					header = {
 						"",
+					},
+					project = {
+						action = function(path)
+							vim.cmd("cd " .. path) -- change global cwd
+							require("neo-tree.command").execute({
+								action = "focus",
+								source = "filesystem",
+								position = "left",
+								dir = path,
+							})
+						end,
 					},
 				},
 			})
